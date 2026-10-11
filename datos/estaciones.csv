@@ -1,0 +1,31 @@
+estacion_id,nombre,troncal,tipo_estacion,zona_uso
+S01,Portal Norte,Autonorte,Portal,Residencial
+S02,Portal Suba,Suba,Portal,Residencial
+S03,Portal Américas,Américas,Portal,Residencial
+S04,Portal Sur,NQS Sur,Portal,Residencial
+S05,Portal Usme,Caracas Sur,Portal,Residencial
+S06,Portal 80,Calle 80,Portal,Residencial
+S07,Banderas,Américas,Intermedia,Residencial
+S08,Molinos,Caracas Sur,Intermedia,Residencial
+S09,Toberín,Autonorte,Intermedia,Residencial
+S10,Suba - Av. Boyacá,Suba,Intermedia,Residencial
+S11,Calle 72,Caracas,Intermedia,Empresarial
+S12,Calle 100,Autonorte,Intermedia,Empresarial
+S13,Héroes,Autonorte,Intermedia,Empresarial
+S14,Virrey,Autonorte,Intermedia,Empresarial
+S15,CAN,Calle 26,Intermedia,Empresarial
+S16,Salitre El Greco,Calle 26,Intermedia,Empresarial
+S17,Universidades,Eje Ambiental,Intermedia,Universitaria
+S18,Calle 45,Caracas,Intermedia,Universitaria
+S19,Marly,Caracas,Intermedia,Universitaria
+S20,Ciudad Universitaria,Calle 26,Intermedia,Universitaria
+S21,Las Aguas,Eje Ambiental,Cabecera,Universitaria
+S22,Ricaurte,NQS,Intercambio,Intercambio
+S23,Av. Jiménez,Caracas,Intercambio,Intercambio
+S24,San Mateo,NQS Sur,Intercambio,Intercambio
+S25,Calle 26,Caracas,Intermedia,Intercambio
+S26,Paloquemao,NQS,Intermedia,Intercambio
+S27,Movistar Arena,NQS,Intermedia,Recreativa
+S28,El Campín,NQS,Intermedia,Recreativa
+S29,Coliseo,NQS,Intermedia,Recreativa
+S30,Simón Bolívar,NQS,Intermedia,Recreativa
