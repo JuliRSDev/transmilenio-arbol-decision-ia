@@ -1,0 +1,727 @@
+|--- tipo_dia_Hábil <= 0.5
+|   |--- evento_masivo <= 0.5
+|   |   |--- tipo_dia_Sábado <= 0.5
+|   |   |   |--- temperatura_c <= 14.8
+|   |   |   |   |--- hora <= 18.5
+|   |   |   |   |   |--- franja_horaria_Madrugada <= 0.5
+|   |   |   |   |   |   |--- franja_horaria_Valle <= 0.5
+|   |   |   |   |   |   |   |--- zona_uso_Recreativa <= 0.5
+|   |   |   |   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- zona_uso_Recreativa >  0.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- franja_horaria_Valle >  0.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- franja_horaria_Madrugada >  0.5
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- hora >  18.5
+|   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |--- hora <= 19.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  19.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |--- temperatura_c >  14.8
+|   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |--- temperatura_c <= 16.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  16.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |--- tipo_dia_Sábado >  0.5
+|   |   |   |--- franja_horaria_Pico AM <= 0.5
+|   |   |   |   |--- franja_horaria_Pico PM <= 0.5
+|   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |   |--- franja_horaria_Madrugada <= 0.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- franja_horaria_Madrugada >  0.5
+|   |   |   |   |   |   |   |   |--- zona_uso_Residencial <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- zona_uso_Residencial >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- hora <= 20.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  20.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |--- temperatura_c <= 15.4
+|   |   |   |   |   |   |   |--- hora <= 9.5
+|   |   |   |   |   |   |   |   |--- franja_horaria_Madrugada <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- franja_horaria_Madrugada >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- hora >  9.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  15.4
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 17.1
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  17.1
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- hora <= 13.5
+|   |   |   |   |   |   |   |   |   |--- hora <= 12.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- hora >  12.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  13.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- franja_horaria_Pico PM >  0.5
+|   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 9.8
+|   |   |   |   |   |   |   |   |   |--- hora <= 18.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- hora >  18.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  9.8
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Portal <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Portal >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.2
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.2
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |   |   |   |--- hora <= 18.5
+|   |   |   |   |   |   |   |   |   |--- hora <= 17.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- hora >  17.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- hora >  18.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 10.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  10.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 10.2
+|   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- temperatura_c >  10.2
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |--- franja_horaria_Pico AM >  0.5
+|   |   |   |   |--- zona_uso_Residencial <= 0.5
+|   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- zona_uso_Recreativa <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 14.1
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  14.1
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- zona_uso_Recreativa >  0.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- hora <= 7.5
+|   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- hora >  7.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- zona_uso_Residencial >  0.5
+|   |   |   |   |   |--- hora <= 7.5
+|   |   |   |   |   |   |--- temperatura_c <= 11.7
+|   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- temperatura_c >  11.7
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 12.7
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  12.7
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |--- hora >  7.5
+|   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |--- evento_masivo >  0.5
+|   |   |--- temperatura_c <= 10.2
+|   |   |   |--- class: Alto
+|   |   |--- temperatura_c >  10.2
+|   |   |   |--- lluvia <= 0.5
+|   |   |   |   |--- class: Alto
+|   |   |   |--- lluvia >  0.5
+|   |   |   |   |--- class: Alto
+|--- tipo_dia_Hábil >  0.5
+|   |--- zona_uso_Recreativa <= 0.5
+|   |   |--- franja_horaria_Pico AM <= 0.5
+|   |   |   |--- franja_horaria_Pico PM <= 0.5
+|   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |--- franja_horaria_Madrugada <= 0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 14.7
+|   |   |   |   |   |   |   |   |--- hora <= 20.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  20.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  14.7
+|   |   |   |   |   |   |   |   |--- hora <= 14.5
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Portal <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Portal >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  14.5
+|   |   |   |   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- franja_horaria_Madrugada >  0.5
+|   |   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.2
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 10.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  10.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.2
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |--- franja_horaria_Valle <= 0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 9.1
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 8.2
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  8.2
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  9.1
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.9
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.9
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- franja_horaria_Valle >  0.5
+|   |   |   |   |   |   |   |--- hora <= 10.5
+|   |   |   |   |   |   |   |   |--- hora <= 9.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- hora >  9.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 16.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  16.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- hora >  10.5
+|   |   |   |   |   |   |   |   |--- hora <= 13.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- hora >  13.5
+|   |   |   |   |   |   |   |   |   |--- hora <= 14.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- hora >  14.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |--- hora <= 20.5
+|   |   |   |   |   |   |--- hora <= 14.5
+|   |   |   |   |   |   |   |--- hora <= 9.5
+|   |   |   |   |   |   |   |   |--- franja_horaria_Madrugada <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 14.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  14.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- franja_horaria_Madrugada >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 10.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  10.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- hora >  9.5
+|   |   |   |   |   |   |   |   |--- hora <= 11.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 15.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  15.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  11.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 19.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  19.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- hora >  14.5
+|   |   |   |   |   |   |   |--- tipo_estacion_Intercambio <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 15.9
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  15.9
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 17.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  17.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- tipo_estacion_Intercambio >  0.5
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |--- hora >  20.5
+|   |   |   |   |   |   |--- temperatura_c <= 8.9
+|   |   |   |   |   |   |   |--- temperatura_c <= 8.2
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  8.2
+|   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- temperatura_c >  8.9
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |--- hora <= 21.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- hora >  21.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.4
+|   |   |   |   |   |   |   |   |   |--- hora <= 21.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- hora >  21.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.4
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |--- franja_horaria_Pico PM >  0.5
+|   |   |   |   |--- zona_uso_Residencial <= 0.5
+|   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 14.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  14.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 17.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  17.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |   |   |--- hora <= 18.5
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |--- hora >  18.5
+|   |   |   |   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 10.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  10.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |--- hora <= 18.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.4
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.4
+|   |   |   |   |   |   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.6
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.0
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.0
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.6
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- hora >  18.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.4
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 10.1
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  10.1
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- temperatura_c >  12.4
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.6
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.6
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 14.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  14.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- zona_uso_Residencial >  0.5
+|   |   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |   |--- temperatura_c <= 15.3
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 13.7
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  13.7
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  15.3
+|   |   |   |   |   |   |   |--- temperatura_c <= 17.7
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 17.2
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 16.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  16.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  17.2
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  17.7
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 14.4
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  14.4
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 15.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  15.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 15.0
+|   |   |   |   |   |   |   |   |   |--- hora <= 17.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- hora >  17.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  15.0
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 16.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  16.1
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.2
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.2
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |--- franja_horaria_Pico AM >  0.5
+|   |   |   |--- hora <= 7.5
+|   |   |   |   |--- zona_uso_Residencial <= 0.5
+|   |   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.3
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.3
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Cabecera <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Cabecera >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 11.3
+|   |   |   |   |   |   |   |   |--- zona_uso_Empresarial <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- zona_uso_Empresarial >  0.5
+|   |   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- temperatura_c >  11.3
+|   |   |   |   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.8
+|   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.8
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.6
+|   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.6
+|   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.2
+|   |   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |--- temperatura_c >  12.2
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio <= 0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.4
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- tipo_estacion_Intercambio >  0.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.8
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |--- zona_uso_Residencial >  0.5
+|   |   |   |   |   |--- tipo_estacion_Intermedia <= 0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.1
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 10.9
+|   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |--- temperatura_c >  10.9
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.3
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.3
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |--- temperatura_c >  12.1
+|   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 12.1
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.5
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- temperatura_c >  12.1
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.9
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.9
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |--- tipo_estacion_Intermedia >  0.5
+|   |   |   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 10.5
+|   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |   |--- temperatura_c >  10.5
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 11.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  11.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Crítico
+|   |   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 11.4
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- temperatura_c >  11.4
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 12.2
+|   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |--- temperatura_c >  12.2
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 13.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  13.7
+|   |   |   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |--- hora >  7.5
+|   |   |   |   |--- zona_uso_Intercambio <= 0.5
+|   |   |   |   |   |--- temperatura_c <= 10.3
+|   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |--- temperatura_c >  10.3
+|   |   |   |   |   |   |--- zona_uso_Universitaria <= 0.5
+|   |   |   |   |   |   |   |--- lluvia <= 0.5
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 15.1
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  12.6
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  15.1
+|   |   |   |   |   |   |   |   |   |--- temperatura_c <= 15.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |   |--- temperatura_c >  15.2
+|   |   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- lluvia >  0.5
+|   |   |   |   |   |   |   |   |--- zona_uso_Residencial <= 0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- zona_uso_Residencial >  0.5
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |--- zona_uso_Universitaria >  0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 14.1
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 12.6
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  12.6
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |--- temperatura_c >  14.1
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 14.9
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |   |   |   |   |--- temperatura_c >  14.9
+|   |   |   |   |   |   |   |   |   |--- class: Medio
+|   |   |   |   |--- zona_uso_Intercambio >  0.5
+|   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |--- temperatura_c <= 11.4
+|   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |--- temperatura_c >  11.4
+|   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |--- tipo_estacion_Intercambio <= 0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 14.3
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- temperatura_c >  14.3
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |--- tipo_estacion_Intercambio >  0.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 14.2
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |   |   |--- temperatura_c >  14.2
+|   |   |   |   |   |   |   |   |--- class: Alto
+|   |--- zona_uso_Recreativa >  0.5
+|   |   |--- hora <= 17.5
+|   |   |   |--- temperatura_c <= 12.3
+|   |   |   |   |--- hora <= 6.5
+|   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- hora >  6.5
+|   |   |   |   |   |--- hora <= 7.5
+|   |   |   |   |   |   |--- temperatura_c <= 11.6
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  11.6
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- hora >  7.5
+|   |   |   |   |   |   |--- hora <= 13.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  13.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |--- temperatura_c >  12.3
+|   |   |   |   |--- hora <= 16.5
+|   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- hora >  16.5
+|   |   |   |   |   |--- temperatura_c <= 15.1
+|   |   |   |   |   |   |--- temperatura_c <= 14.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  14.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- temperatura_c >  15.1
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |--- hora >  17.5
+|   |   |   |--- hora <= 18.5
+|   |   |   |   |--- temperatura_c <= 11.9
+|   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- temperatura_c >  11.9
+|   |   |   |   |   |--- temperatura_c <= 13.8
+|   |   |   |   |   |   |--- temperatura_c <= 13.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- temperatura_c >  13.1
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- temperatura_c >  13.8
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |   |--- hora >  18.5
+|   |   |   |   |--- temperatura_c <= 10.9
+|   |   |   |   |   |--- hora <= 19.5
+|   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- hora >  19.5
+|   |   |   |   |   |   |--- hora <= 20.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 9.8
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  9.8
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  20.5
+|   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |--- temperatura_c >  10.9
+|   |   |   |   |   |--- temperatura_c <= 13.2
+|   |   |   |   |   |   |--- hora <= 21.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 12.6
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 11.6
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  11.6
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  12.6
+|   |   |   |   |   |   |   |   |--- temperatura_c <= 12.8
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |   |--- temperatura_c >  12.8
+|   |   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |--- hora >  21.5
+|   |   |   |   |   |   |   |--- temperatura_c <= 11.8
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |   |   |--- temperatura_c >  11.8
+|   |   |   |   |   |   |   |   |--- class: Bajo
+|   |   |   |   |   |--- temperatura_c >  13.2
+|   |   |   |   |   |   |--- class: Bajo

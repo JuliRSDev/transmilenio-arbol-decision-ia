@@ -1,0 +1,4 @@
+modelo,exactitud,f1_macro
+Línea base (clase más frecuente),0.663,0.199
+Árbol sin podar (prof. 26),0.874,0.745
+Árbol podado (prof. 10),0.904,0.781

@@ -1,0 +1,6 @@
+descripcion,hora,tipo_dia,tipo_estacion,zona_uso,lluvia,temperatura_c,evento_masivo,prediccion
+"Portal (residencial), martes 6 a. m., lloviendo",6,Hábil,Portal,Residencial,1,10.5,0,Crítico
+"Calle 72 (empresarial), jueves 5 p. m., sin lluvia",17,Hábil,Intermedia,Empresarial,0,16.0,0,Alto
+"Universidades, domingo 12 m., sin lluvia",12,Domingo/Festivo,Intermedia,Universitaria,0,19.0,0,Bajo
+"El Campín, sábado 7 p. m., CON partido de fútbol",19,Sábado,Intermedia,Recreativa,0,13.0,1,Alto
+"El Campín, sábado 7 p. m., SIN evento",19,Sábado,Intermedia,Recreativa,0,13.0,0,Bajo

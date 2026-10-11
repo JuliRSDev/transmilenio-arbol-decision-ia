@@ -1,0 +1,22 @@
+,importancia
+hora,0.1465
+franja_horaria_Pico PM,0.1169
+tipo_dia_Hábil,0.1151
+zona_uso_Intercambio,0.0958
+zona_uso_Universitaria,0.0931
+zona_uso_Recreativa,0.0733
+franja_horaria_Pico AM,0.073
+zona_uso_Residencial,0.0657
+franja_horaria_Valle,0.0551
+franja_horaria_Madrugada,0.0387
+temperatura_c,0.0355
+zona_uso_Empresarial,0.0282
+evento_masivo,0.0205
+tipo_dia_Sábado,0.0163
+lluvia,0.0139
+tipo_estacion_Intermedia,0.0102
+tipo_estacion_Intercambio,0.0015
+tipo_estacion_Portal,0.0005
+tipo_estacion_Cabecera,0.0003
+tipo_dia_Domingo/Festivo,0.0
+franja_horaria_Noche,0.0
